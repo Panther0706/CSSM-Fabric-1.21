@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "cssm",
+	"version": "0.1.0-1.21",
+	"name": "Caj's Sword Smithing Mod",
+	"description": "A more complex crafting weapon crafting system.",
+	"authors": [
+		"YourFriendCaj"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/cssm/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.caj.cssm.CajsSwordSmithingMod"
+		],
+		"fabric-datagen": [
+			"net.caj.cssm.CajsSwordSmithingModDataGenerator"
+		],
+		"client": [
+			"net.caj.cssm.CajsSwordSmithingModClient"
+		]
+	},
+	"mixins": [
+		"cssm.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
